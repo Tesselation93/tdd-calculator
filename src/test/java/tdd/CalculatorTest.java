@@ -34,4 +34,19 @@ public class CalculatorTest {
         assertEquals(5, result);
     }
 
+    @Test
+    void addEmptyStringReturnsZero() {
+        Calculator calc = new Calculator();
+        int result = calc.add("");
+        assertEquals(0, result);
+    }
+
+    @Test
+    void addSingleNumberStringReturnsValue() {
+        Calculator calc = new Calculator();
+        int result = calc.add("5");
+        assertEquals(5, result);
+    }
+
+
 }
