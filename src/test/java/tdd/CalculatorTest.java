@@ -48,5 +48,11 @@ public class CalculatorTest {
         assertEquals(5, result);
     }
 
+    @Test
+    void addCommaSeparatedNumbersReturnsSum() {
+        Calculator calc = new Calculator();
+        int result = calc.add("1,2,3");
+        assertEquals(6, result);
+    }
 
 }
