@@ -54,5 +54,11 @@ public class CalculatorTest {
         int result = calc.add("1,2,3");
         assertEquals(6, result);
     }
+    @Test
+    void addArrayOfNumbersReturnsSum() {
+        Calculator calc = new Calculator();
+        int result = calc.add(new int[]{1, 2, 3});
+        assertEquals(6, result);
+    }
 
 }
